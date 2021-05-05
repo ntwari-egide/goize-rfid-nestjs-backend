@@ -19,7 +19,7 @@ export class CardServices {
   }
 
   async findUpdate(id: String){
-    return this.cardModel.findByIdAndUpdate(id).exec()
+    this.cardModel.findByIdAndUpdate(id).exec()
   }
 
   async findByUUID(uuid: String): Promise<CardModel> {
