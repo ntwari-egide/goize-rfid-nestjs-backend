@@ -1,7 +1,6 @@
 import { Model } from 'mongoose';
 import { Injectable, Inject } from '@nestjs/common';
 import CardModel from 'src/interfaces/card.interface';
-import CardModel from 'src/interfaces/card.interface';
 
 @Injectable()
 export class CardServices {
@@ -19,7 +18,11 @@ export class CardServices {
     return this.cardModel.find().exec();
   }
 
+  async findUpdate(id: String){
+    return this.cardModel.findByIdAndUpdate(id).exec()
+  }
+
   async findByUUID(uuid: String): Promise<CardModel> {
-      return this.cardModel.find({uuid: uuid}).exec();
+      return this.cardModel.findOne({uuid: uuid}).exec();
   }
 }

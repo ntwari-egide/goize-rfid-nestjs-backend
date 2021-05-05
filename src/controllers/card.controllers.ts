@@ -1,5 +1,5 @@
 import { CardServices } from './../services/cards.services';
-import { Body, Controller, Get, Post } from '@nestjs/common'
+import { Body, Controller, Get, Post, Req } from '@nestjs/common'
 import CardModel from 'src/interfaces/card.interface';
 
 
