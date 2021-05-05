@@ -1,11 +1,10 @@
-import { Body, Controller, Get, Post, Req } from '@nestjs/common'
-import CardModel from 'src/interfaces/card.interface';
+import { Body, Controller, Get, Post } from '@nestjs/common'
 import TransactionModel from 'src/interfaces/transaction.interface';
 import { CardServices } from 'src/services/cards.services';
 import { TransactionServices } from 'src/services/transaction.services';
 
 
-@Controller('/cards')
+@Controller('/transactions')
 export default class TransactionController{
     listOfDoctors : object[]
 
