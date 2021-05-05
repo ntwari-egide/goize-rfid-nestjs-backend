@@ -1,6 +1,5 @@
 import { CardServices } from './../services/cards.services';
-import { HttpExceptionFilter } from './http-request.filter';
-import { Body, Controller, Get, HttpException, HttpStatus, Post, UseFilters } from '@nestjs/common'
+import { Body, Controller, Get, Post } from '@nestjs/common'
 import CardModel from 'src/interfaces/card.interface';
 
 
