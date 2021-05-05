@@ -1,6 +1,7 @@
 import { Model } from 'mongoose';
 import { Injectable, Inject } from '@nestjs/common';
 import CardModel from 'src/interfaces/card.interface';
+import CardModel from 'src/interfaces/card.interface';
 
 @Injectable()
 export class CardServices {
@@ -16,5 +17,9 @@ export class CardServices {
 
   async findAll(): Promise<CardModel[]> {
     return this.cardModel.find().exec();
+  }
+
+  async findByUUID(): Promise<CardModel> {
+    return null
   }
 }
