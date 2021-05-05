@@ -3,7 +3,7 @@ import { Injectable, Inject } from '@nestjs/common';
 import CardModel from 'src/interfaces/card.interface';
 
 @Injectable()
-export class CatsService {
+export class CardServices {
   constructor(
     @Inject('CARD')
     private cardModel: Model<CardModel>,
