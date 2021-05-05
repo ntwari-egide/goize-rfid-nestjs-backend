@@ -19,7 +19,7 @@ export class CardServices {
     return this.cardModel.find().exec();
   }
 
-  async findByUUID(): Promise<CardModel> {
-    return null
+  async findByUUID(uuid: String): Promise<CardModel> {
+      return this.cardModel.find({uuid: uuid}).exec();
   }
 }
