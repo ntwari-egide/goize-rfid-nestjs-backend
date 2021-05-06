@@ -5,7 +5,7 @@ import TransactionModel from 'src/interfaces/transaction.interface';
 @Injectable()
 export class TransactionServices {
   constructor(
-    @Inject('CARD')
+    @Inject('TRANSACTION')
     private transactionModel: Model<TransactionModel>,
   ) {}
 
